@@ -1,0 +1,274 @@
+* {
+	  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  /*Estilos para index - home*/
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    }
+  
+  .nav-item {
+    font-size: 20px;
+
+    display: inline-block;
+    padding: .5rem; }
+  
+  .nav-link {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px; }
+  
+
+  .nav-item a:hover {
+    color: black;
+    background-color:#37b475;
+    border-radius: 100%; }
+
+  
+  /* Estilos para el contenido principal */
+
+  .cuerpo {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .principal {
+    font-size: 90px;
+    margin-bottom: 20px;
+    color:#199152;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .imagenlogo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el pie de página */
+
+  .social {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social p {
+    margin: 0;
+  }
+  
+  .social ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .social li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+
+.parrafo{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+  /* Media query para Home */
+
+
+@media (max-width: 768px) {
+  .cuerpo {
+    padding: 20px;
+  }
+
+  .principal {
+    font-size: 60px;
+  }
+
+.nav-item a:hover {
+    color: black;
+    text-align: center;    
+    font-size: 20px;
+    border-radius: 0%;   
+  }
+}
+
+/*css para quienes somos*/
+
+.imagenlogointegrantes{
+  width: 300px;
+  margin: 5% auto;
+  display: block;
+  }
+  
+
+.section{
+  display: flex; 
+  flex-direction:row;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  flex-wrap: nowrap;
+}
+
+.h1quienes {
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+}
+
+
+/*css para galería de libros*/
+
+
+.bodygaleria {
+    font-family: Arial, sans-serif;
+    background-color: #fffbfb;
+    margin: 0;
+    padding: 0;
+  }
+
+  .h1galeria {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+  }
+
+  .h2galeria{
+    text-align: center;
+    padding: 10px 0;
+    color: #333;
+  }
+
+  .book-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .book {
+    width: 200px;
+    border: 0.1px solid #4d0808;
+    border-radius: 1px;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .book-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+
+  .book-author {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .book:hover {
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgb(202, 201, 201); /* Color de sombreado */
+    filter: grayscale(0.1px);
+  }
+
+  
+
+
+  /*css para historia*/
+
+  .mainhistoria {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .h1historia {
+      text-align: center;
+      padding: 20px 0;
+      color: #333;
+  }
+
+
+  .parrafohistoria {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .parrafohistoria:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .parrafohistoria:last-of-type {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+    /*css para contacto*/
+
+    .h1contacto{
+      text-align: center;
+      padding: 20px 0;
+      color: #333; 
+      
+    }
+      
+    .container6 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          gap: 20px 20px;
+          grid-auto-flow: row;
+          grid-template-areas: ". .";
+          margin-top: 20px;
+          margin-bottom: 30px;
+          margin-left: 50px;
+          justify-items: center; }
+
+    .contacto {
+            margin-top: 50px;
+            width: 450px;
+            border-color:#199152; 
+            border-radius: 3px;
+          }     
+
+    .logosredes{
+      margin-right: 50px;
+    }
+
+
+/*media query para home*/
+
